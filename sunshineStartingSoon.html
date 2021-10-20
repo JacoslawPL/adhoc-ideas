@@ -22,15 +22,19 @@
             color: black;
             -webkit-text-fill-color: white;
             /* Will override color (regardless of order) */
-            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: black;
             font-size: 160px;
             margin: 6%;
         }
 
-        #iframeHolder {
+        iframe {
+            display: block;
             margin: auto;
-            position: relative;
+            border: 10px solid transparent;
+            padding: 5px;
+            border-image: url(https://www.w3schools.com/cssref/border.png) 20% round;
+
         }
     </style>
 </head>
@@ -41,12 +45,11 @@
         <![endif]-->
 
     <h1>Starting soon</h1>
-    <div id="iframeHolder">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NaCCG7QkM_c" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NaCCG7QkM_c" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
     <script src="" async defer></script>
 </body>
 
